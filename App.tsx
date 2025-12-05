@@ -1,12 +1,12 @@
 import { useState, useEffect } from 'react';
 import { AppView, Product, Sale, CartItem } from './types';
 import { LayoutDashboard, Store, Package, Sparkles, Menu, LogOut, Candy, Cloud, CloudOff, Loader2 } from 'lucide-react';
-import { POS } from './components/POS';
-import { Inventory } from './components/Inventory';
-import { Dashboard } from './components/Dashboard';
-import { getStoreInsights } from './services/geminiService';
-import { fetchProducts, fetchSales, saveProduct, deleteProductRemote, saveSale, updateStockBatch, updateSalePayment } from './services/dataService';
-import { isCloudEnabled } from './services/supabaseClient';
+import { POS } from './POS';
+import { Inventory } from './Inventory';
+import { Dashboard } from './Dashboard';
+import { getStoreInsights } from './geminiService';
+import { fetchProducts, fetchSales, saveProduct, deleteProductRemote, saveSale, updateStockBatch, updateSalePayment } from './dataService';
+import { isCloudEnabled } from './supabaseClient';
 
 function App() {
   const [currentView, setCurrentView] = useState<AppView>(AppView.POS);
