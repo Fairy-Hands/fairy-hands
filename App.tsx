@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { AppView, Product, Sale, CartItem } from './types';
 import { LayoutDashboard, Store, Package, Sparkles, Menu, LogOut, Candy, Cloud, CloudOff, Loader2 } from 'lucide-react';
 import { POS } from './components/POS';
